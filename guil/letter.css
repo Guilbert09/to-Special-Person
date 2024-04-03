@@ -66,6 +66,6 @@ body {
 /* Media query for smaller screen sizes */
 @media (max-width: 600px) {
   .birthdayCard {
-    width: 90%; /* Adjust width for smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
   }
 }
