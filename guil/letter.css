@@ -5,18 +5,18 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: #92674f;
-  margin: 0; /* Remove default margin */
+  margin: 0; 
 }
 
 .birthdayCard {
   position: relative;
-  width: 660px;
+  width: 660px; /* Default width */
   height: 990px;
   cursor: pointer;
   transform-style: preserve-3d;
   transform: perspective(2500px);
   transition: 4s;
-  margin: auto; /* Center horizontally */
+  margin: auto; 
 }
 
 .birthdayCard:hover {
@@ -59,6 +59,13 @@ body {
   position: fixed;
   z-index: -1;   
   left: 0;
-  top: 0px; /* Added 'px' */
+  top: 0px; 
   box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+}
+
+/* Media query for smaller screen sizes */
+@media (max-width: 600px) {
+  .birthdayCard {
+    width: 90%; /* Adjust width for smaller screens */
+  }
 }
